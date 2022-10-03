@@ -1,0 +1,191 @@
+<html>
+
+<head>
+
+	<title>EROE</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+	<script src="eroeJs.js"></script>
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Oswald:wght@700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<!-- local style-->
+	<link rel="stylesheet" href="eroeStyle.css" >
+	<link rel="stylesheet" href="eroeStyleTelView.css" >
+	<link rel="stylesheet" href="disegniniShein.css" >
+
+</head>
+
+
+<body onload="controlloMediaQuery()">
+
+<section class="copertina">
+
+	<div class="immagine">
+		<img src="img_avatar.png" alt="Avatar">
+	</div>
+
+	<div class="nome">DOC SHEIN</div>
+
+</section>
+
+<section class="presentazione">Che sia un vestito elegante, un pigiama da ospedale o una camicia di forza, in un attimo lui farà apparire l'abito adatto alla situazione! </section>
+
+<section class="disegni">
+
+
+	<div class="contenitoreDisegni">
+	
+		<div id="esprimi" class="scritte esprimi">ESPRIMI</div>
+		<div id="un" class="scritte un">UN</div>
+		<div id="desiderio" class="scritte desiderio">DESIDERIO</div>
+		<div id="seh" class="scritte seh">SEH</div>
+
+		<div id="oh" class="scritte3 oh">OOOOOH E OOOH</div>
+
+		<div id="dalCielo" class="scritte2 dalCielo">DAL CIELO</div>
+		<div id="cadono" class="scritte2 cadono">CADONO</div>
+		<div id="stelle" class="scritte2 stelle">STELLE</div>
+		<div id="michelin" class="scritte2 micheLin">MICHELIN</div>
+		
+		<div id="gonna" class="vestiti gonna"></div>
+		<div id="maglia" class="vestiti maglia"></div>
+		<div id="pantalone" class="vestiti pantalone"></div>
+		<div id="dress" class="vestiti dress"></div>
+
+		<div id="bra" class="vestiti vestiti3 bra"></div>
+		<div id="mutanda" class="vestiti vestiti3 mutanda"></div>
+		<div id="figura" class="vestiti vestiti3 figura"></div>
+		<div id="perv" class="vestiti vestiti3 perv">PERVERTITOOO</div>
+		
+	</div>
+
+</section>
+
+<section class="compitiContainer">
+
+	<div id="compito1Titolo" class="compitiTitolo mission1" onclick="flip(this.id)"><div class="foto uno"></div></div>
+	<div id="compito2Titolo" class="compitiTitolo mission2" onclick="flip(this.id)">ENIGMI<div class="foto due"></div></div>
+	<div id="compito3Titolo" class="compitiTitolo mission3" onclick="flip(this.id)">VIDEO<div class="foto tre"></div></div>
+
+	<div id="compito1Titolo" class="compitiTitoloBack mission1b" onclick="flip('compito1Titolo')">
+		<div class="titolo2">GIOCHI</div>
+		<div class="descrizione">Scopri tutti i giochi che abbiamo preparto per te, da svolgere da solo o per gareggiare con i tuoi amici </div>
+
+	</div>
+
+	<div id="compito2Titolo" class="compitiTitoloBack mission2b" onclick="flip('compito2Titolo')">
+		<div class="titolo2">ENIGMI</div>
+		<div class="descrizione">Riuscirai a risolvere gli indovinelli? Completerai i giochi enigmistici? Mettiti alla prova!
+		Riuscirai a risolvere gli indovinelli? Completerai i giochi enigmistici? Mettiti alla prova!</div>
+    
+	</div>
+
+	<div id="compito3Titolo" class="compitiTitoloBack mission3b" onclick="flip('compito3Titolo')">
+		<div class="titolo2">VIDEO</div>
+		<div class="descrizione">Guarda le avventure dei tuoi eroi interpetate dagli animatori</div>
+    
+	</div>
+
+
+</section>
+
+<section class="end">
+</section>
+
+</body>
+
+<footer>
+
+	<script>
+	
+		function scritta(){
+		
+		var tx = gsap.timeline({ repeat: -1, repeatDelay:1});
+
+		//prima animazione
+		tx.from(".esprimi", {duration: 0.3, autoAlpha: 0, delay: 0.1})
+		.to(".esprimi", {duration: 0.3, autoAlpha: 1, delay: 0})
+		.from(".un", {duration: 0.3, autoAlpha: 0, delay: 0})
+		.to(".un", {duration: 0.3, autoAlpha: 1, delay: 0})
+		.from(".desiderio", {duration: 0.3, autoAlpha: 0, delay: 0})
+		.to(".desiderio", {duration: 0.3, autoAlpha: 1, delay: 0})
+		.from(".seh", {duration: 0.3, autoAlpha: 0, delay: 0})
+		.to(".seh", {duration: 0.3, autoAlpha: 1, delay: 0})
+		.to(".scritte", {duration:0.5, autoAlpha: 0, delay: 0.5})
+		.from(".oh", {duration: 0.1, autoAlpha:0, delay:0.1})
+		.from(".oh", {duration: 0, right:'100%'})
+		.to(".oh", {duration: 2, left:'-100%'})
+		.to(".scritte3", {duration:0.1, autoAlpha: 0, delay: 0})
+		.from(".dalCielo", {duration: 0.3, autoAlpha: 0, delay: 0.5})
+		.to(".dalCielo", {duration: 0.3, autoAlpha: 1, delay: 0})
+		.from(".cadono", {duration: 0.3, autoAlpha: 0, delay: 0})
+		.to(".cadono", {duration: 0.3, autoAlpha: 1, delay: 0})
+		.from(".stelle", {duration: 0.3, autoAlpha: 0, delay: 0})
+		.to(".stelle", {duration: 0.3, autoAlpha: 1, delay: 0})
+		.from(".michelin", {duration: 0.3, autoAlpha: 0, delay: 0})
+		.to(".michelin", {duration: 0.3, autoAlpha: 1, delay: 0})
+		.to(".scritte2", {duration:0.5, autoAlpha: 0, delay: 0.5})
+		
+		//seconda animazione
+		.from(".gonna", {duration: 0.4, autoAlpha:0, delay:2, left:'-15%', scale:0})
+		.to(".gonna", {duration: 1, left: '45%', scale:1})
+		.to(".gonna", {duration: 0.5, left: '70%', scale:0.7, delay:-0.2})
+		.to(".gonna", {duration: 0.4, left: '100%', scale:0.3, delay:-0.2})
+		.to(".gonna", {duration: 0.1, autoAlpha:1, delay:0, scale:0})
+		.from(".maglia", {duration: 0.4, autoAlpha:0, delay:0, left:'-15%', scale:0})
+		.to(".maglia", {duration: 1, left: '45%', scale:1})
+		.to(".maglia", {duration: 0.5, left: '70%', scale:0.7, delay:-0.2})
+		.to(".maglia", {duration: 0.4, left: '100%', scale:0.3, delay:-0.2})
+		.to(".maglia", {duration: 0.1, autoAlpha:1, delay:0, scale:0})
+		.from(".pantalone", {duration: 0.4, autoAlpha:0, delay:0, left:'-15%', scale:0})
+		.to(".pantalone", {duration: 1, left: '45%', scale:1})
+		.to(".pantalone", {duration: 0.5, left: '70%', scale:0.7, delay:-0.2})
+		.to(".pantalone", {duration: 0.4, left: '100%', scale:0.3, delay:-0.2})
+		.to(".pantalone", {duration: 0.1, autoAlpha:1, delay:0, scale:0})
+		.from(".dress", {duration: 0.4, autoAlpha:0, delay:0, left:'-15%', scale:0})
+		.to(".dress", {duration: 1, left: '45%', scale:1})
+		.to(".dress", {duration: 0.5, left: '70%', scale:0.7, delay:-0.2})
+		.to(".dress", {duration: 0.4, left: '100%', scale:0.3, delay:-0.2})
+		.to(".dress", {duration: 0.1, autoAlpha:1, delay:0, scale:0})
+		.to(".vestiti", {duration:0.1, autoAlpha: 0})
+		
+		//terza animazione
+		.from(".bra", {duration: 0.1, autoAlpha:0, delay:2})
+		.from(".bra", {duration: 0, left: '100%'})
+		.to(".bra", {duration: 0.5, left: '60%', scale:1, rotate:'-10deg'})
+		.from(".mutanda", {duration: 0.1, autoAlpha:0})
+		.from(".mutanda", {duration: 0, left: '100%'})
+		.to(".bra", {duration: 0.5, left: '40%', scale:0.7, rotate:'-90deg', delay:-0.6})
+		.to(".bra", {duration: 0.5, left: '10%', top:'20%', scale:0.5, rotate:'-270deg', delay:-0.5})
+		.to(".mutanda", {duration: 0.5, left: '60%', scale:1, rotate:'-10deg'})
+		.to(".mutanda", {duration: 0.5, left: '40%', scale:0.7, rotate:'-90deg', delay:-0.5})
+		.to(".mutanda", {duration: 0.5, left: '17%', top:'20%', scale:0.4, rotate:'-270deg', rotateY:'-50deg', delay:-0.5})
+		
+		.from(".figura", {duration: 0.1, autoAlpha:0, delay:0, left:'100%'})
+		.to(".figura", {duration: 2, left: '-30%'})
+		.to(".figura", {duration: 0, autoAlpha:1, delay:-0.5, scale:0})
+		
+		.from(".perv", {duration: 0.1, autoAlpha:0, delay:0})
+		.to(".perv", {duration: 1, width:'5%'})
+		.to(".perv", {duration: 1, width:'fit-content', left:'43%', delay:-1})
+		.to(".perv", {duration: 1, autoAlpha:1})
+		
+		.to(".bra", {duration: 0, autoAlpha:1, delay:3, scale:0 })
+		.to(".mutanda", {duration: 0, autoAlpha:1, delay:0, scale:0})
+		.to(".vestiti3", {duration:0.1, autoAlpha: 0});
+		
+		}
+		
+	</script>
+
+</footer>
+
+</html>

@@ -1,0 +1,169 @@
+.contenitoreDisegni{
+	position: absolute;
+    width: 100%;
+    height: 14%;
+	overflow:hidden;
+}
+
+.scritte{
+	float:left;
+	margin-left:2%;
+	margin-top:7%;
+	width:20%;
+	visibility:hidden;
+	text-align:center;
+	
+}
+
+.scritte3{
+	position:absolute;
+	font-size:xxx-large;
+	width:100%;
+	height:20%;
+	visibility:hidden;
+	text-align:center;
+	display:inline-block;
+	background-position:center;
+    background-size:contain;
+    background-repeat:no-repeat;
+	font-family:"Oswald", sans-serif;
+}
+
+.seh{
+	margin-left:10%;
+}
+
+.scritte2{
+	position:absolute;
+	font-size:x-large;
+	width:22%;
+	visibility:hidden;
+	text-align:center;
+	margin-top:8%;
+}
+
+.vestiti{
+	float:left;
+	margin-left:2%;
+	height:100%;
+	visibility:hidden;
+	text-align:center;
+	width: 15%;
+}
+
+.cadono{
+	left:25%;
+}
+
+.stelle{
+	left:50%;
+}
+
+.michelin{
+	left:75%;
+}
+
+.portale{
+  background-image: url("disegniShien/portale.png");
+  display:inline-block;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  position:absolute;
+  left:2%;
+}
+
+#portaleB{
+	-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  background-image: url("disegniShien/portale.png");  
+  display:inline-block;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  position:absolute;
+  left:84%;
+}
+
+.bra{
+  background-image: url("disegniShien/bra.png");  
+  display:inline-block;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  position:absolute;
+  left:82%;
+}
+
+.gonna{
+  background-image: url("disegniShien/gonna.png");
+  height:100%;
+  display:inline-block;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  position:absolute;
+  left:0%;
+}
+
+.maglia{
+  background-image: url("disegniShien/maglia.png");  
+  display:inline-block;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  position:absolute;
+  left:2%;
+}
+
+.pantalone{
+  background-image: url("disegniShien/pantalone.png");  
+  display:inline-block;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  position:absolute;
+  left:2%;
+}
+
+.dress{
+  background-image: url("disegniShien/dress.png");  
+  display:inline-block;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  position:absolute;
+  left:8%;
+}
+
+.mutanda{
+  background-image: url("disegniShien/mutanda.png");  
+  display:inline-block;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  position:absolute;
+  left:82%;
+}
+
+.figura{
+  background-image: url("disegniShien/figura.png");  
+  display:inline-block;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  position:absolute;
+  left:82%;
+}
+
+.perv{ 
+  display:inline;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  position:absolute;
+  left:80%;
+  top:15%;
+  font-family:"Oswald", sans-serif;
+  
+}
