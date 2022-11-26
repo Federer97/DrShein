@@ -112,13 +112,25 @@ section{
 
 .mission2{
   cursor:pointer;
-  /*margin-top:75%;*/
+  /*margin-top:82%;*/
   display:none;
 }
 
 .mission3{
   cursor:pointer;
-  /*margin-top:150%;*/
+  /*margin-top:163%;*/
+  display:none;
+  }
+	
+.mission4{
+  cursor:pointer;
+  /*margin-top:244%;*/
+  display:none;
+  }
+	
+.mission5{
+  cursor:pointer;
+  /*margin-top:325%;*/
   display:none;
   }
 
@@ -149,14 +161,28 @@ section{
 .mission2b{
   cursor:pointer;
   transform: rotateY(180deg);
-  /*margin-top:75%;*/
+  /*margin-top:82%;*/
   display:none;
 }
 
 .mission3b{
   cursor:pointer;
   transform: rotateY(180deg);
-  /*margin-top:150%;*/
+  /*margin-top:163%;*/
+  display:none;
+}
+	
+.mission4b{
+  cursor:pointer;
+  transform: rotateY(180deg);
+  /*margin-top:244%;*/
+  display:none;
+}
+	
+.mission5b{
+  cursor:pointer;
+  transform: rotateY(180deg);
+  /*margin-top:325%;*/
   display:none;
 }
 
